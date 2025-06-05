@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{50227800-c632-426c-b217-f0f1a162838e}</ProjectGuid>
-    <RootNamespace>ProyectoProgra2V2</RootNamespace>
+    <ProjectGuid>{9a27e911-d39c-4bf5-b604-9abb49a311ed}</ProjectGuid>
+    <RootNamespace>ProyectofinalProgra2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -93,6 +93,8 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -119,16 +121,14 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="adquisiciones.txt" />
-    <Text Include="stock.txt" />
-    <Text Include="ventas.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Cajero.cpp" />
+    <ClCompile Include="MiHilo.cpp" />
     <ClCompile Include="Producto.cpp" />
     <ClCompile Include="Proyecto final Progra2.cpp" />
     <ClCompile Include="SingletonStock.cpp" />
@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cajero.h" />
+    <ClInclude Include="MiHilo.h" />
     <ClInclude Include="Producto.h" />
     <ClInclude Include="SingletonStock.h" />
     <ClInclude Include="Supermercado.h" />

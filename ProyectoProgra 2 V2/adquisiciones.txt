@@ -1,0 +1,3 @@
+Cereal 50 20.0
+Leche 100 4.00
+Galleta 100 3.00
